@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% block title %}Add Incident{% endblock %}
+{% block title %}Add Incident/Solution{% endblock %}
 
 {% block content %}
     <div class="container-fluid mt-3">
@@ -12,29 +12,36 @@
 
             <div class="col-sm-3">
                 <br>
-                <span>Tech Name {{ tbd }}</span><br><br>
-                <span>Location {{ tbd }}</span><br><br>
-                Serial No. <span>{{ tbd }}</span><br><br>
-                Make <span>{{ tbd }}</span>
+                <span>Tech Name: {{ tbd }}</span><br><br>
+                <span>Location: {{ tbd }}</span><br><br>
+                <span>Serial No.: {{ tbd }}</span><br><br>
+                <span>Make: {{ tbd }}</span>
             </div>
 
             <div class="col-sm-3">
                 <br>
-                <span>Model {{ tbd }}</span><br><br>
-                <span>Game Name {{ tbd }}</span><br><br>
-                <span>Date {{ tbd }}</span><br><br>
-                <span>Category {{ tbd }}</span>
+                <span>Model: {{ tbd }}</span><br><br>
+                <span>Game Name: {{ tbd }}</span><br><br>
+                <span>Date: {{ tbd }}</span><br><br>
+                <span>Category: {{ tbd }}</span>
             </div>
         </div>
+
         <hr>
-        <div>
-            <p>Description</p><br><br>
+
+        <p style="font-weight: bold">Description:</p>
+        <div style="margin: 150px 150px 150px 150px">
+            <p>{{ tbd }}</p>
         </div>
-        <div>
-            <p>Notes</p><br><br>
+
+        <p style="font-weight: bold">Notes:</p>
+        <div style="margin: 150px 150px 150px 150px">
+            <p>{{ tbd }}</p>
         </div>
-        <div>
-            <p>Solution</p><br><br>
+
+        <p style="font-weight: bold">Solution:</p>
+        <div style="margin: 150px 150px 150px 150px">
+            <p>{{ tbd }}</p>
         </div>
     </div>
 {% endblock %}
