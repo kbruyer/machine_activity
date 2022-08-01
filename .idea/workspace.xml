@@ -5,38 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1befcf3c-1565-46cd-be89-403b054df5ba" name="Changes" comment="07/28/2022">
-      <change afterPath="$PROJECT_DIR$/staticfiles/css/base.2a77fcff3f30.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/css/base.2a77fcff3f30.css.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/images/bench.b81f12b727cc.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/images/bench.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/images/cage.21f30acc9878.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/images/cage.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/images/hotel-outside.a8832c6cdee8.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/images/hotel-outside.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/images/nrt.3bf368ac2e8a.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/images/nrt.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/images/off_track_betting.fffcaec6575a.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/images/off_track_betting.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/images/recycler.f094a2ce5c67.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/images/recycler.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/images/slot_machine_1.fb57a9bb76ee.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/images/slot_machine_1.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/images/slot_machine_3.b3fbc881e3ea.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/images/slot_machine_3.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/images/slot_machines.5e799d497d31.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/images/slot_machines.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/images/slot_machines_2.8f3c87b23a06.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/images/slot_machines_2.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/images/table-games.1e01a36e6aba.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/images/table-games.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/images/ticket-paper.365f48a528e2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/images/ticket-paper.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/images/vendor.20cda06296fd.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/images/vendor.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/css/base.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/css/base.css.gz" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/css/base.css.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/staticfiles.json" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/staticfiles.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/pages/incident_solution.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/incident_solution.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +25,9 @@
         <option value="HTML File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Rebase.Settings">
+    <option name="NEW_BASE" value="master" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -174,6 +147,8 @@
       <workItem from="1659207195318" duration="15293000" />
       <workItem from="1659313482638" duration="760000" />
       <workItem from="1659314785322" duration="559000" />
+      <workItem from="1659318294617" duration="62000" />
+      <workItem from="1659318360192" duration="3770000" />
     </task>
     <task id="LOCAL-00002" summary="Update">
       <created>1658389029969</created>
