@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load crispy_forms_filters %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <div>
+        <img src="../../static/images/hotel-outside.jpeg" width="300" height="200" alt="Casino">
+        <p>Northern Quest Resort & Casino</p>
+    </div>
+
+    <h1>Daily Activity Report</h1>
+
+    <div>
+        <p style="margin: 10px 10px 10px 10px; font-weight: bold">Date:</p>
+        <p style="margin: 10px 10px 10px 10px">{{ created }}</p><br>
+    </div>
+
+    <div>
+        <p style="margin: 10px 10px 10px 10px; font-weight: bold">Daily Report:</p>
+        <p style="margin: 10px 10px 10px 10px">{{ description }}</p><br>
+    </div>
+
+    <a href="{% url 'add_daily_report' %}" class="btn btn-primary">Create Report</a>
+
+{% endblock %}

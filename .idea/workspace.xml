@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1befcf3c-1565-46cd-be89-403b054df5ba" name="Changes" comment="07/28/2022" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" module-name="machine_activity" is-module-sdk="true">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+    <option name="myUseModuleSdk" value="true" />
+    <option name="myModuleName" value="machine_activity" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2CFC4irCAhysl2BXoW2SZZpgbEh" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/keithbruyer/PycharmProjects/machine_activity_hold&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;sqlite&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/MA_main" />
+      <recent name="$PROJECT_DIR$/MA_main/templates" />
+      <recent name="$PROJECT_DIR$/MA_main/static/css" />
+      <recent name="$PROJECT_DIR$/MA_account/static" />
+      <recent name="$PROJECT_DIR$/account/templates/registration" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates" />
+      <recent name="$PROJECT_DIR$/static/images" />
+      <recent name="$PROJECT_DIR$/static/css" />
+      <recent name="$PROJECT_DIR$/static" />
+      <recent name="$PROJECT_DIR$/MA_main/static/images" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Run" type="Python.DjangoServer" factoryName="Django server">
+      <module name="machine_activity" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="machine_activity.settings" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/.local/share/virtualenvs/machine_activity-ujVzzOgC/bin/python" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task id="LOCAL-00001" summary="Update">
+      <created>1658388560219</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1658388560219</updated>
+    </task>
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1befcf3c-1565-46cd-be89-403b054df5ba" name="Changes" comment="Update" />
+      <created>1658388756800</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1658388756800</updated>
+      <workItem from="1658388758230" duration="1083000" />
+      <workItem from="1658426838637" duration="1122000" />
+      <workItem from="1658428906249" duration="2239000" />
+      <workItem from="1658433492942" duration="25000" />
+      <workItem from="1658454113159" duration="3910000" />
+      <workItem from="1658460299714" duration="4268000" />
+      <workItem from="1658540511883" duration="9144000" />
+      <workItem from="1658617404846" duration="120000" />
+      <workItem from="1658702716579" duration="1884000" />
+      <workItem from="1658709156321" duration="13400000" />
+      <workItem from="1658905568657" duration="318000" />
+      <workItem from="1658908266592" duration="12000" />
+      <workItem from="1658908283131" duration="3330000" />
+      <workItem from="1658954029110" duration="31961000" />
+      <workItem from="1659000412923" duration="60000" />
+      <workItem from="1659056635546" duration="2618000" />
+      <workItem from="1659064514153" duration="582000" />
+      <workItem from="1659067235958" duration="224000" />
+      <workItem from="1659080180817" duration="368000" />
+      <workItem from="1659080598951" duration="725000" />
+      <workItem from="1659081453536" duration="766000" />
+      <workItem from="1659138073121" duration="7958000" />
+      <workItem from="1659153620199" duration="7618000" />
+      <workItem from="1659165894997" duration="90000" />
+      <workItem from="1659166057524" duration="54000" />
+      <workItem from="1659207195318" duration="15293000" />
+    </task>
+    <task id="LOCAL-00002" summary="Update">
+      <created>1658389029969</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1658389029969</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Update">
+      <created>1658389183105</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1658389183105</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Update">
+      <created>1658390022149</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1658390022149</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Update">
+      <created>1658431601267</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1658431601267</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Update">
+      <created>1658432439006</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1658432439006</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Update">
+      <created>1658433128297</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1658433128297</updated>
+    </task>
+    <task id="LOCAL-00008" summary="07/21/2022">
+      <created>1658472135654</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1658472135654</updated>
+    </task>
+    <task id="LOCAL-00009" summary="07/21/2022">
+      <created>1658473123532</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1658473123532</updated>
+    </task>
+    <task id="LOCAL-00010" summary="07/22/2022">
+      <created>1658549434275</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1658549434275</updated>
+    </task>
+    <task id="LOCAL-00011" summary="07/22/2022">
+      <created>1658549497142</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1658549497142</updated>
+    </task>
+    <task id="LOCAL-00012" summary="07/24/2022">
+      <created>1658713393277</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1658713393277</updated>
+    </task>
+    <task id="LOCAL-00013" summary="07/24/2022">
+      <created>1658713869088</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1658713869088</updated>
+    </task>
+    <task id="LOCAL-00014" summary="07/24/2022">
+      <created>1658721967066</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1658721967066</updated>
+    </task>
+    <task id="LOCAL-00015" summary="07/24/2022">
+      <created>1658725296421</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1658725296421</updated>
+    </task>
+    <task id="LOCAL-00016" summary="07/24/2022">
+      <created>1658730419848</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1658730419848</updated>
+    </task>
+    <task id="LOCAL-00017" summary="07/24/2022">
+      <created>1658730436176</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1658730436176</updated>
+    </task>
+    <task id="LOCAL-00018" summary="07/27/2022">
+      <created>1658908497508</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1658908497508</updated>
+    </task>
+    <task id="LOCAL-00019" summary="07/27/2022">
+      <created>1658909016612</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1658909016612</updated>
+    </task>
+    <task id="LOCAL-00020" summary="07/27/2022">
+      <created>1658910062511</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1658910062511</updated>
+    </task>
+    <task id="LOCAL-00021" summary="07/27/2022">
+      <created>1658912553641</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1658912553641</updated>
+    </task>
+    <task id="LOCAL-00022" summary="07/28/2022">
+      <created>1659000254637</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1659000254637</updated>
+    </task>
+    <task id="LOCAL-00023" summary="07/28/2022">
+      <created>1659000451726</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1659000451726</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+    <MESSAGE value="Update" />
+    <MESSAGE value="07/21/2022" />
+    <MESSAGE value="07/22/2022" />
+    <MESSAGE value="07/24/2022" />
+    <MESSAGE value="07/27/2022" />
+    <MESSAGE value="07/28/2022" />
+    <option name="LAST_COMMIT_MESSAGE" value="07/28/2022" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/machine_activity$Test__.coverage" NAME="Test:  Coverage Results" MODIFIED="1658385616556" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/machine_activity$Test__machine_activity.coverage" NAME="Test: machine_activity Coverage Results" MODIFIED="1658388790952" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/machine_activity$Test__account.coverage" NAME="Test: account Coverage Results" MODIFIED="1658386023552" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+  </component>
+</project>

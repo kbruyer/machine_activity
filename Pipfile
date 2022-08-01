@@ -1,0 +1,21 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = "*"
+environ = {extras = ["dango"], version = "*"}
+environs = "*"
+psycopg2-binary = "*"
+whitenoise = "*"
+gunicorn = "*"
+dj-database-url = "*"
+django-project = "*"
+django-crispy-forms = "==1.13.0"
+crispy-bootstrap5 = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.8"

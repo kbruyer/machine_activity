@@ -1,0 +1,1 @@
+web: gunicorn machine_activity.wsgi --log-file -
