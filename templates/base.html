@@ -15,23 +15,11 @@
 <div id="header">
     <span class="logo">Machine Activity</span>
     {% if request.user.is_authenticated %}
-        <ul class="menu">
-            <li {% if section == "home" %}class="selected"{% endif %}>
-                <a href="{% url "home" %}">Home</a>
-            </li>
-            <li {% if section == "incident" %}class="selected"{% endif %}>
-                <a href="{% url "add_incident" %}">Incident/Solution</a>
-            </li>
-            <li {% if section == "knowledge" %}class="selected"{% endif %}>
-                <a href="{% url "knowledge_base" %}">Knowledge Base</a>
-            </li>
-            <li {% if section == "equipment" %}class="selected"{% endif %}>
-                <a href="{% url "equipment_info" %}">Equipment Info</a>
-            </li>
-            <li {% if section == "reports" %}class="selected"{% endif %}>
-                <a href="{% url "reports" %}">Reports</a>
-            </li>
-        </ul>
+        <a href="{% url "home" %}">Home</a>
+        <a href="{% url "incident" %}">Incident</a>
+        <a href="{% url "equipment_info" %}">Equipment Info</a>
+        <a href="{% url "knowledge_base" %}">Knowledge Base</a>
+        <a href="{% url "reports" %}">Reports</a>
     {% endif %}
     <span class="user">
     {% if request.user.is_authenticated %}

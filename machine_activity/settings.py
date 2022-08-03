@@ -33,7 +33,7 @@ ALLOWED_HOSTS = [".herokuapp.com", "localhost", "127.0.0.1"]
 
 INSTALLED_APPS = [
     'whitenoise.runserver_nostatic',
-    'MA_login.apps.AccountConfig',
+    'main.apps.AccountConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -43,7 +43,6 @@ INSTALLED_APPS = [
 
     'crispy_forms',
     'crispy_bootstrap5',
-    'MA_main',
 ]
 
 MIDDLEWARE = [
@@ -62,8 +61,7 @@ ROOT_URLCONF = 'machine_activity.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates']
-        ,
+        'DIRS': [str(BASE_DIR.joinpath('templates'))],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

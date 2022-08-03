@@ -6,7 +6,7 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('MA_login', '0006_alter_dailyactivitypost_created'),
+        ('main', '0006_alter_dailyactivitypost_created'),
     ]
 
     operations = [
