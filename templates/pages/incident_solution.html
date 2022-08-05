@@ -3,45 +3,42 @@
 {% block title %}Add Incident/Solution{% endblock %}
 
 {% block content %}
-    <div class="container-fluid mt-3">
-        <div class="row">
-            <div class="col-sm-3">
-                <img src="../../static/images/hotel-outside.jpeg" width="300" height="200" alt="Casino">
-                <p>Northern Quest Resort & Casino</p>
-            </div>
+    <div>
+        <img src="../../static/images/hotel-outside.jpeg" width="300" height="200" alt="Casino">
+        <p>Northern Quest Resort & Casino</p>
+    </div>
 
-            <div class="col-sm-3">
-                <br>
-                <span>Tech Name: {{ techName }}</span><br><br>
-                <span>Location: {{ tbd }}</span><br><br>
-                <span>Serial No.: {{ tbd }}</span><br><br>
-                <span>Make: {{ tbd }}</span>
-            </div>
+    <h1>Incident</h1>
 
-            <div class="col-sm-3">
-                <br>
-                <span>Model: {{ tbd }}</span><br><br>
-                <span>Game Name: {{ tbd }}</span><br><br>
-                <span>Date: {{ tbd }}</span><br><br>
-                <span>Category: {{ tbd }}</span>
-            </div>
-        </div>
+    <div>
+        <span style="margin: 10px 10px 10px 10px; font-weight: bold">Tech Name:</span>
+        <span style="margin: 10px 10px 10px 10px">{{ techName }}</span>
+        <span style="margin: 10px 10px 10px 10px; font-weight: bold">Model:</span>
+        <span style="margin: 10px 10px 10px 10px">{{ model }}</span><br>
+
+        <span style="margin: 10px 10px 10px 10px; font-weight: bold">Location:</span>
+        <span style="margin: 10px 10px 10px 10px">{{ location }}</span>
+        <span style="margin: 10px 10px 10px 10px; font-weight: bold">Game Name:</span>
+        <span style="margin: 10px 10px 10px 10px">{{ gameName }}</span><br>
+
+        <span style="margin: 10px 10px 10px 10px; font-weight: bold">Serial Number:</span>
+        <span style="margin: 10px 10px 10px 10px">{{ serialNumber }}</span>
+        <span style="margin: 10px 10px 10px 10px; font-weight: bold">Date:</span>
+        <span style="margin: 10px 10px 10px 10px">{{ date }}</span><br>
+
+        <span style="margin: 10px 10px 10px 10px; font-weight: bold">Make:</span>
+        <span style="margin: 10px 10px 10px 10px">{{ make }}</span>
+        <span style="margin: 10px 10px 10px 10px; font-weight: bold">Category:</span>
+        <span style="margin: 10px 10px 10px 10px">{{ category }}</span><br>
 
         <hr>
 
-        <p style="font-weight: bold">Description:</p>
-        <div style="margin: 150px 150px 150px 150px">
-            <p>{{ tbd }}</p>
-        </div>
+        <p style="margin: 10px 10px 10px 10px; font-weight: bold">Incident:</p>
+        <span style="margin: 10px 10px 10px 10px">{{ incident }}</span><br>
 
-        <p style="font-weight: bold">Notes:</p>
-        <div style="margin: 150px 150px 150px 150px">
-            <p>{{ tbd }}</p>
-        </div>
+        <p style="margin: 10px 10px 10px 10px; font-weight: bold">Solution:</p>
+        <span style="margin: 10px 10px 10px 10px">{{ solution }}</span><br><br>
 
-        <p style="font-weight: bold">Solution:</p>
-        <div style="margin: 150px 150px 150px 150px">
-            <p>{{ tbd }}</p>
-        </div>
+        <a href="{% url 'add_incident_solution' %}" class="btn btn-primary">ADD ANOTHER INCIDENT</a>
     </div>
 {% endblock %}

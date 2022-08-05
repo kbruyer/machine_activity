@@ -4,16 +4,18 @@
 {% block title %}Add Incident{% endblock %}
 
 {% block content %}
-    <div>
+    <div class="container-sm">
         <img src="../../static/images/hotel-outside.jpeg" width="300" height="200" alt="Casino">
         <p>Northern Quest Resort & Casino</p>
     </div>
 
-    <div>
+    <div class="container-sm" style="padding: 0 500px 10px 10px">
         <form action="" method="post">
             {% csrf_token %}
             {{ form|crispy }}
-            <input type="submit" value="Save">
+            <div>
+                <input type="submit" value="Submit">
+            </div>
         </form>
     </div>
 {% endblock %}

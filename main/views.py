@@ -1,10 +1,13 @@
+from django.contrib.auth.decorators import login_required
 from django.http import HttpResponse
 from django.shortcuts import render
 from django.contrib.auth import authenticate, login
-from django.views.generic import ListView, TemplateView
+from django.views.generic import TemplateView
 from django.views.generic.edit import CreateView
 from .forms import LoginForm
 from .models import DailyReport, Incident
+
+from django.template import loader
 
 
 def user_login(request):
@@ -28,9 +31,40 @@ def user_login(request):
     return render(request, 'registration/login.html', {'form': form})
 
 
-class HomeListlView(ListView):
-    model = DailyReport
-    template_name = 'pages/home.html'
+@login_required
+def home(request):
+    post = DailyReport.objects.last()
+    if post is None:
+        return render(request, '../templates/pages/home.html')
+    else:
+        template = loader.get_template('../templates/pages/home.html')
+        context = {
+            'description': post.description,
+            'created': post.created
+        }
+        return HttpResponse(template.render(context, request))
+
+
+@login_required
+def incident_solution(request):
+    post = Incident.objects.last()
+    if post is None:
+        return render(request, '../templates/pages/incident_solution.html')
+    else:
+        template = loader.get_template('../templates/pages/incident_solution.html')
+        context = {
+            'techName': post.techName,
+            'location': post.location,
+            'serialNumber': post.serialNumber,
+            'make': post.make,
+            'model': post.model,
+            'gameName': post.gameName,
+            'date': post.date,
+            'category': post.category,
+            'incident': post.incident,
+            'solution': post.solution
+        }
+        return HttpResponse(template.render(context, request))
 
 
 class DailyReportCreateView(CreateView):
@@ -39,14 +73,10 @@ class DailyReportCreateView(CreateView):
     fields = ['description']
 
 
-class IncidentSolutionTemplateView(TemplateView):
-    template_name = 'pages/incident_solution.html'
-
-
 class IncidentSolutionCreateView(CreateView):
     model = Incident
     template_name = 'pages/add_incident_solution.html'
-    fields = ['techName', 'location', 'serialNumber', 'make', 'model', 'gameName', 'category', 'description', 'notes',
+    fields = ['techName', 'location', 'serialNumber', 'make', 'model', 'gameName', 'category', 'incident',
               'solution']
 
 

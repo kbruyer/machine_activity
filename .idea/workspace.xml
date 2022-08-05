@@ -4,50 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1befcf3c-1565-46cd-be89-403b054df5ba" name="Changes" comment="07/31/2022">
-      <change afterPath="$PROJECT_DIR$/main/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/migrations/0008_alter_dailyactivitypost_description.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/migrations/0009_alter_dailyactivitypost_table.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/migrations/0010_alter_dailyactivitypost_created.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/migrations/0011_alter_dailyactivitypost_table.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/migrations/0012_rename_dailyactivitypost_post.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/migrations/0013_remove_post_created.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/migrations/0014_post_created.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/migrations/0015_rename_post_dailyreport.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/migrations/0016_incident.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/pages/add_incident_solution.html" afterDir="false" />
+    <list default="true" id="1befcf3c-1565-46cd-be89-403b054df5ba" name="Changes" comment="08/02/2022">
+      <change afterPath="$PROJECT_DIR$/main/migrations/0017_alter_incident_category_alter_incident_gamename_and_more.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/migrations/0018_alter_incident_date.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/migrations/0019_rename_description_incident_incident.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/migrations/0020_alter_incident_date.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/migrations/0021_alter_incident_date.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/migrations/0022_remove_incident_notes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/css/base.2b6e9c4511b6.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/staticfiles/css/base.2b6e9c4511b6.css.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MA_login/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MA_login/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MA_login/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MA_login/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MA_login/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MA_login/migrations/0002_alter_dailyactivitypost_created.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/migrations/0002_alter_dailyactivitypost_created.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MA_login/migrations/0003_alter_dailyactivitypost_created.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/migrations/0003_alter_dailyactivitypost_created.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MA_login/migrations/0004_alter_dailyactivitypost_created.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/migrations/0004_alter_dailyactivitypost_created.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MA_login/migrations/0005_alter_dailyactivitypost_created.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/migrations/0005_alter_dailyactivitypost_created.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MA_login/migrations/0006_alter_dailyactivitypost_created.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/migrations/0006_alter_dailyactivitypost_created.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MA_login/migrations/0007_alter_dailyactivitypost_created_and_more.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/migrations/0007_alter_dailyactivitypost_created_and_more.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MA_login/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/migrations/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MA_login/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MA_login/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MA_login/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MA_login/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MA_main/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MA_main/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MA_main/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MA_main/forms.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MA_main/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MA_main/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MA_main/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MA_main/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MA_main/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/machine_activity/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/machine_activity/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/machine_activity/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/machine_activity/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/base.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/css/base.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/css/base.css.gz" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/css/base.css.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/staticfiles.json" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/staticfiles.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/pages/add_daily_report.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/add_daily_report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/pages/add_incident_solution.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/add_incident_solution.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/pages/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/pages/incident_solution.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/incident_solution.html" afterDir="false" />
     </list>
@@ -86,25 +61,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/keithbruyer/PycharmProjects/machine_activity/templates/pages",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/keithbruyer/PycharmProjects/machine_activity/templates/pages&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "sqlite"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;sqlite&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/templates/pages" />
@@ -200,7 +175,8 @@
       <workItem from="1659413335044" duration="521000" />
       <workItem from="1659414351679" duration="11373000" />
       <workItem from="1659463348837" duration="236000" />
-      <workItem from="1659463704139" duration="16470000" />
+      <workItem from="1659463704139" duration="23230000" />
+      <workItem from="1659634013732" duration="18399000" />
     </task>
     <task id="LOCAL-00002" summary="Update">
       <created>1658389029969</created>
@@ -377,7 +353,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659337938029</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="08/02/2022">
+      <created>1659490807420</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1659490807420</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -406,7 +389,8 @@
     <MESSAGE value="07/27/2022" />
     <MESSAGE value="07/28/2022" />
     <MESSAGE value="07/31/2022" />
-    <option name="LAST_COMMIT_MESSAGE" value="07/31/2022" />
+    <MESSAGE value="08/02/2022" />
+    <option name="LAST_COMMIT_MESSAGE" value="08/02/2022" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/machine_activity$Test__.coverage" NAME="Test:  Coverage Results" MODIFIED="1658385616556" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
