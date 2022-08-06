@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% load crispy_forms_filters %}
 
-{% block title %}Add Incident{% endblock %}
+{% block title %}Add an Incident{% endblock %}
 
 {% block content %}
     <div class="container-sm">
@@ -10,6 +10,7 @@
     </div>
 
     <div class="container-sm" style="padding: 0 500px 10px 10px">
+        <h2>Report an Incident</h2>
         <form action="" method="post">
             {% csrf_token %}
             {{ form|crispy }}

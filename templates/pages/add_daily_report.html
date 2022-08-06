@@ -1,15 +1,16 @@
 {% extends "base.html" %}
 {% load crispy_forms_filters %}
 
-{% block title %}Add Incident{% endblock %}
+{% block title %}Add Daily Report{% endblock %}
 
 {% block content %}
-    <div>
+    <div class="container-sm">
         <img src="../../static/images/hotel-outside.jpeg" width="300" height="200" alt="Casino">
         <p>Northern Quest Resort & Casino</p>
     </div>
 
-    <div>
+    <div class="container-sm" style="padding: 0 500px 10px 10px">
+        <h2>Add a Daily Activity Report</h2>
         <form action="" method="post">
             {% csrf_token %}
             {{ form|crispy }}

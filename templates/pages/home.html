@@ -4,22 +4,20 @@
 {% block title %}Home{% endblock %}
 
 {% block content %}
-    <div>
+    <div class="container-sm">
         <img src="../../static/images/hotel-outside.jpeg" width="300" height="200" alt="Casino">
         <p>Northern Quest Resort & Casino</p>
     </div>
 
-    <h1>Daily Activity Report</h1>
-
-     <div>
+    <div class="container-sm" style="padding: 0 500px 10px 10px">
+        <h2>Daily Activity Report</h2>
         <p style="margin: 10px 10px 10px 10px; font-weight: bold">Date:</p>
         <p style="margin: 10px 10px 10px 10px">{{ created }}</p><br>
     </div>
 
-    <div>
+    <div class="container-sm" style="padding: 0 500px 10px 10px">
         <p style="margin: 10px 10px 10px 10px; font-weight: bold">Daily Report:</p>
         <p style="margin: 10px 10px 10px 10px">{{ description }}</p><br>
+        <a href="{% url 'add_daily_report' %}" class="btn btn-primary">CREATE REPORT</a>
     </div>
-
-    <a href="{% url 'add_daily_report' %}" class="btn btn-primary">CREATE REPORT</a>
 {% endblock %}
