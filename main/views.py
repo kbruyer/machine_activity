@@ -2,7 +2,7 @@ from django.contrib.auth.decorators import login_required
 from django.http import HttpResponse
 from django.shortcuts import render
 from django.contrib.auth import authenticate, login
-from django.views.generic import TemplateView
+from django.views.generic import TemplateView, ListView
 from django.views.generic.edit import CreateView
 from .forms import LoginForm
 from .models import DailyReport, Incident
@@ -67,6 +67,24 @@ def incident_solution(request):
         return HttpResponse(template.render(context, request))
 
 
+@login_required
+def knowledge_base(request):
+    post = DailyReport.objects.all()
+    if post is None:
+        return render(request, '../templates/pages/knowledge_base.html')
+    else:
+        template = loader.get_template('../templates/pages/knowledge_base.html')
+        context = {
+            'location': post.location,
+            'make': post.make,
+            'model': post.model,
+            'category': post.category,
+            'incident': post.incident,
+            'solution': post.solution
+        }
+        return HttpResponse(template.render(context, request))
+
+
 class DailyReportCreateView(CreateView):
     model = DailyReport
     template_name = 'pages/add_daily_report.html'
@@ -80,7 +98,7 @@ class IncidentSolutionCreateView(CreateView):
               'solution']
 
 
-class KnowledgeBaseTemplateView(TemplateView):
+class KnowledgeBaseListView(ListView):
     template_name = 'pages/knowledge_base.html'
 
 

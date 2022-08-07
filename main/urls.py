@@ -1,8 +1,7 @@
 from django.urls import path
 from django.contrib.auth import views as auth_views
 from . import views
-from .views import DailyReportCreateView, IncidentSolutionCreateView, KnowledgeBaseTemplateView, \
-    EquipmentInfoTemplateView, ReportsTemplateView
+from .views import DailyReportCreateView, IncidentSolutionCreateView, EquipmentInfoTemplateView, ReportsTemplateView
 
 urlpatterns = [
     # Daily Report Pages
@@ -13,8 +12,9 @@ urlpatterns = [
     path('incident_solution/', views.incident_solution, name='incident'),
     path('add_incident_solution/', IncidentSolutionCreateView.as_view(), name='add_incident_solution'),
 
+    path('knowledge_base/', views.knowledge_base, name='knowledge_base'),
+
     # General Pages
-    path('knowledge_base/', KnowledgeBaseTemplateView.as_view(), name='knowledge_base'),
     path('equipment_info/', EquipmentInfoTemplateView.as_view(), name='equipment_info'),
     path('reports/', ReportsTemplateView.as_view(), name='reports'),
 

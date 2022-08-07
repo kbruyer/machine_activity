@@ -15,11 +15,11 @@
 <div id="header">
     <span class="logo">Machine Activity</span>
     {% if request.user.is_authenticated %}
-        <a href="{% url "home" %}">Home</a>
-        <a href="{% url "add_incident_solution" %}">Incident</a>
-        <a href="{% url "knowledge_base" %}">Knowledge Base</a>
-        <a href="{% url "equipment_info" %}">Equipment Info</a>
-        <a href="{% url "reports" %}">Reports</a>
+        <a id="nav_a" href="{% url "home" %}">Home |</a>
+        <a id="nav_a" href="{% url "add_incident_solution" %}">Incident |</a>
+        <a id="nav_a" href="{% url "knowledge_base" %}">Knowledge Base |</a>
+        <a id="nav_a" href="{% url "equipment_info" %}">Equipment Info |</a>
+        <a id="nav_a" href="{% url "reports" %}">Reports</a>
     {% endif %}
     <span class="user">
     {% if request.user.is_authenticated %}
