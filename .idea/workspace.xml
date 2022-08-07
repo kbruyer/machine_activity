@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1befcf3c-1565-46cd-be89-403b054df5ba" name="Changes" comment="08/05/2022">
+    <list default="true" id="1befcf3c-1565-46cd-be89-403b054df5ba" name="Changes" comment="08/06/2022">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/base.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/pages/knowledge_base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/knowledge_base.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -168,7 +164,8 @@
       <workItem from="1659634013732" duration="18597000" />
       <workItem from="1659686572967" duration="301000" />
       <workItem from="1659740210030" duration="9468000" />
-      <workItem from="1659816304065" duration="940000" />
+      <workItem from="1659816304065" duration="977000" />
+      <workItem from="1659851748951" duration="487000" />
     </task>
     <task id="LOCAL-00002" summary="Update">
       <created>1658389029969</created>
@@ -373,7 +370,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659753478778</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="08/06/2022">
+      <created>1659845848289</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1659845848289</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -404,7 +408,8 @@
     <MESSAGE value="07/31/2022" />
     <MESSAGE value="08/02/2022" />
     <MESSAGE value="08/05/2022" />
-    <option name="LAST_COMMIT_MESSAGE" value="08/05/2022" />
+    <MESSAGE value="08/06/2022" />
+    <option name="LAST_COMMIT_MESSAGE" value="08/06/2022" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/machine_activity$Test__.coverage" NAME="Test:  Coverage Results" MODIFIED="1658385616556" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
