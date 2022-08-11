@@ -2,7 +2,7 @@ from django.contrib.auth.decorators import login_required
 from django.http import HttpResponse
 from django.shortcuts import render
 from django.contrib.auth import authenticate, login
-from django.views.generic import TemplateView, ListView
+from django.views.generic import TemplateView
 from django.views.generic.edit import CreateView
 from .forms import LoginForm
 from .models import DailyReport, Incident
@@ -69,20 +69,18 @@ def incident_solution(request):
 
 @login_required
 def knowledge_base(request):
-    post = DailyReport.objects.all()
-    if post is None:
-        return render(request, '../templates/pages/knowledge_base.html')
-    else:
-        template = loader.get_template('../templates/pages/knowledge_base.html')
-        context = {
-            'location': post.location,
-            'make': post.make,
-            'model': post.model,
-            'category': post.category,
-            'incident': post.incident,
-            'solution': post.solution
-        }
-        return HttpResponse(template.render(context, request))
+    query_dict = request.GET
+    query = query_dict.get('q')
+    search_object = None
+    if query is not None:
+        search_object = Incident.objects.all().values().filter(incident__contains=query)
+    context = {'incident': search_object}
+    return render(request, '../templates/pages/knowledge_base.html', context)
+
+
+@login_required
+def equipment_info(request):
+    return render(request, 'pages/equipment_info.html', {'section': 'equipment'})
 
 
 class DailyReportCreateView(CreateView):
@@ -98,12 +96,10 @@ class IncidentSolutionCreateView(CreateView):
               'solution']
 
 
-class KnowledgeBaseListView(ListView):
-    template_name = 'pages/knowledge_base.html'
-
-
-class EquipmentInfoTemplateView(TemplateView):
-    template_name = 'pages/equipment_info.html'
+class KnowledgeBaseCreateView(CreateView):
+    model = Incident
+    template_name = 'pages/get_knowledge_base.html'
+    fields = ['incident']
 
 
 class ReportsTemplateView(TemplateView):

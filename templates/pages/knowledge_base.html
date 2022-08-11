@@ -8,18 +8,37 @@
         <img src="../../static/images/hotel-outside.jpeg" width="300" height="200" alt="Casino">
         <p>Northern Quest Resort & Casino</p>
     </div>
-
+    <div class="container-sm" style="padding: 0 1010px 10px 10px">
+        {% if not incident %}
+            <div class="card">
+                <div class="card-header">
+                    <h5>No Results Were Found</h5>
+                </div>
+            </div>
+        {% endif %}
+    </div>
     <div class="container-sm" style="padding: 0 500px 10px 10px">
         <h2>Knowledge Base Report</h2>
-        <div class="container-sm" style="padding: 0 500px 10px 10px">
-            <h2>Search the Knowledge Base</h2>
-            <form action="" method="get">
-                {% csrf_token %}
-                {{ form|crispy }}
-                <div>
-                    <input type="search" value="Search">
+        {% for item in incident %}
+            <div class="card">
+                <div class="card-header">
+                    <span class="font-weight-bold">{{ item.category }}</span> &middot;
+                    <span class="text-muted">{{ item.make }} {{ item.model }} | {{ item.date }}</span>
                 </div>
-            </form>
-        </div>
+                <div class="card-body">
+                    <p>Incident:</p> {{ item.incident }}
+                    <p>Solution:</p> {{ item.solution }}
+                </div>
+            </div>
+        {% endfor %}
+        <form action="" method="GET" style="margin-top: 10px">
+            <p>Enter an Incident Search Term</p>
+            <p style="font-style: italic">For example, type <b>Mon</b> to search for a monitor related issue, or click
+                submit for all incidents</p>
+            <label>
+                <input type="text" name="q">
+            </label>
+            <input type="submit">
+        </form>
     </div>
 {% endblock %}
