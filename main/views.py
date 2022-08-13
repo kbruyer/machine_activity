@@ -69,8 +69,8 @@ def incident_solution(request):
 
 @login_required
 def knowledge_base(request):
-    query_dict = request.GET
-    query = query_dict.get('q')
+    incident_query_dict = request.GET
+    query = incident_query_dict.get('q')
     search_object = None
     if query is not None:
         search_object = Incident.objects.all().values().filter(incident__contains=query)
@@ -80,7 +80,18 @@ def knowledge_base(request):
 
 @login_required
 def equipment_info(request):
-    return render(request, 'pages/equipment_info.html', {'section': 'equipment'})
+    return render(request, 'pages/equipment_info.html')
+
+
+@login_required
+def daily_activity_report(request):
+    da_query_dict = request.GET
+    query = da_query_dict.get('q')
+    search_object = None
+    if query is not None:
+        search_object = DailyReport.objects.all().values().filter(created=query)
+    context = {'daily_report': search_object}
+    return render(request, '../templates/pages/daily_activity_report.html', context)
 
 
 class DailyReportCreateView(CreateView):
@@ -94,12 +105,6 @@ class IncidentSolutionCreateView(CreateView):
     template_name = 'pages/add_incident_solution.html'
     fields = ['techName', 'location', 'serialNumber', 'make', 'model', 'gameName', 'category', 'incident',
               'solution']
-
-
-class KnowledgeBaseCreateView(CreateView):
-    model = Incident
-    template_name = 'pages/get_knowledge_base.html'
-    fields = ['incident']
 
 
 class ReportsTemplateView(TemplateView):

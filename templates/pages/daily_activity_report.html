@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% block title %}Knowledge Base{% endblock %}
+{% block title %}Daily Activity Reports{% endblock %}
 
 {% block content %}
     <div class="container-sm">
@@ -8,8 +8,8 @@
         <p>Northern Quest Resort & Casino</p>
     </div>
     <div class="container-sm" style="padding: 0 950px 10px 10px">
-        <h2>Knowledge Base Report</h2>
-        {% if not incident %}
+        <h2>Daily Activity Reports</h2>
+        {% if not daily_report %}
             <div class="card">
                 <div class="card-header">
                     <h5>No Results Were Found</h5>
@@ -18,25 +18,23 @@
         {% endif %}
     </div>
     <div class="container-sm" style="padding: 0 500px 10px 10px">
-        {% for item in incident %}
+        {% for item in daily_report %}
             <div class="card">
                 <div class="card-header">
-                    <span class="font-weight-bold">{{ item.category }}</span> &middot;
-                    <span class="text-muted">{{ item.make }} {{ item.model }} | {{ item.date }}</span>
+                    <span class="font-weight-bold">{{ item.created }}</span>
                 </div>
                 <div class="card-body">
-                    <p>Incident:</p> {{ item.incident }}
-                    <p>Solution:</p> {{ item.solution }}
+                    <p>Daily Report:</p> {{ item.description }}
                 </div>
             </div>
         {% endfor %}
         <form action="" method="GET" style="margin-top: 10px">
-            <p>Enter an Incident Search Term</p>
-            <p style="font-style: italic">For example, type <b>Mon</b> to search for a monitor related issue.</p>
-            <label>
-                <input type="text" name="q" required>
-            </label>
-            <input type="submit">
+            <p style="font-style: italic">Enter a beginning date:</p>
+            <label for="q"></label>
+            <input type="date" id="q" name="q" required>
+            <p style="font-style: italic">Enter an ending date:</p>
+            <input type="date" id="q" name="q" required>
+            <input type="submit" value="Submit">
         </form>
     </div>
 {% endblock %}

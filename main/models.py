@@ -3,7 +3,7 @@ from django.urls import reverse
 
 
 class DailyReport(models.Model):
-    created = models.DateTimeField(auto_now_add=True, null=True)
+    created = models.DateField(auto_now_add=True, null=True)
     description = models.TextField(max_length=1500, null=True)
 
     def __str__(self):

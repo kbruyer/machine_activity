@@ -1,7 +1,7 @@
 from django.urls import path
 from django.contrib.auth import views as auth_views
 from . import views
-from .views import DailyReportCreateView, IncidentSolutionCreateView, KnowledgeBaseCreateView, ReportsTemplateView
+from .views import DailyReportCreateView, IncidentSolutionCreateView, ReportsTemplateView
 
 urlpatterns = [
     # Daily Report URLS
@@ -20,6 +20,7 @@ urlpatterns = [
 
     # Reports URLS
     path('reports/', ReportsTemplateView.as_view(), name='reports'),
+    path('daily_activity_report/', views.daily_activity_report, name='daily_activity_report'),
 
     # Login URLS
     path('login/', auth_views.LoginView.as_view(), name='login'),
