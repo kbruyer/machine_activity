@@ -87,6 +87,7 @@ def equipment_info(request):
 @login_required
 def daily_activity_report(request):
     query_dict = request.GET
+
     date_query = query_dict.get('created')
     desc_query = query_dict.get('desc')
 
@@ -117,22 +118,37 @@ def slot_machines_report(request):
 
 @login_required
 def tech_activity_report(request):
-    incident_query_dict = request.GET
-    query = incident_query_dict.get('q')
-    search_object = None
-    if query is not None:
-        search_object = Incident.objects.all().values().filter(incident__contains=query)
+    query_dict = request.GET
+
+    tech_query = query_dict.get('tech')
+    date_query = query_dict.get('date')
+
+    tech_search_object = None
+    location_search_object = None
+    serial_number_search_object = None
+    make_search_object = None
+    model_search_object = None
+    game_name_search_object = None
+    date_search_object = None
+    category_search_object = None
+    incident_search_object = None
+    solution_search_object = None
+
+    if tech_query is not None:
+        tech_search_object = Incident.objects.filter(Q(techName__contains=tech_query)).values()
+    elif date_query is not None:
+        date_search_object = Incident.objects.filter(Q(date__exact=date_query)).values()
     context = {
-        'techName': techName,
-        'location': location,
-        'serialNumber': serialNumber,
-        'make': make,
-        'model': model,
-        'gameName': gameName,
-        'date': date,
-        'category': category,
-        'incident': incident,
-        'solution': solution
+        'techName': tech_search_object,
+        'location': location_search_object,
+        'serialNumber': serial_number_search_object,
+        'make': make_search_object,
+        'model': model_search_object,
+        'gameName': game_name_search_object,
+        'date': date_search_object,
+        'category': category_search_object,
+        'incident': incident_search_object,
+        'solution': solution_search_object
     }
     return render(request, '../templates/pages/tech_activity_report.html', context)
 
