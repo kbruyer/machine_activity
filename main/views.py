@@ -1,4 +1,5 @@
 from django.contrib.auth.decorators import login_required
+from django.db.models import Q
 from django.http import HttpResponse
 from django.shortcuts import render
 from django.contrib.auth import authenticate, login
@@ -85,12 +86,21 @@ def equipment_info(request):
 
 @login_required
 def daily_activity_report(request):
-    da_query_dict = request.GET
-    query = da_query_dict.get('q')
-    search_object = None
-    if query is not None:
-        search_object = DailyReport.objects.all().values().filter(created=query)
-    context = {'daily_report': search_object}
+    query_dict = request.GET
+    date_query = query_dict.get('created')
+    desc_query = query_dict.get('desc')
+
+    date_search_object = None
+    desc_search_object = None
+
+    if date_query is not None:
+        date_search_object = DailyReport.objects.filter(Q(created__lte=date_query)).values()
+    elif desc_query is not None:
+        desc_search_object = DailyReport.objects.filter(Q(description__contains=desc_query)).values()
+
+    context = {'daily_report_date': date_search_object,
+               'daily_report_desc': desc_search_object,
+               }
     return render(request, '../templates/pages/daily_activity_report.html', context)
 
 
