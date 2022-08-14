@@ -104,6 +104,39 @@ def daily_activity_report(request):
     return render(request, '../templates/pages/daily_activity_report.html', context)
 
 
+@login_required
+def slot_machines_report(request):
+    incident_query_dict = request.GET
+    query = incident_query_dict.get('q')
+    search_object = None
+    if query is not None:
+        search_object = Incident.objects.all().values().filter(incident__contains=query)
+    context = {'incident': search_object}
+    return render(request, '../templates/pages/slot_machines_report.html', context)
+
+
+@login_required
+def tech_activity_report(request):
+    incident_query_dict = request.GET
+    query = incident_query_dict.get('q')
+    search_object = None
+    if query is not None:
+        search_object = Incident.objects.all().values().filter(incident__contains=query)
+    context = {
+        'techName': techName,
+        'location': location,
+        'serialNumber': serialNumber,
+        'make': make,
+        'model': model,
+        'gameName': gameName,
+        'date': date,
+        'category': category,
+        'incident': incident,
+        'solution': solution
+    }
+    return render(request, '../templates/pages/tech_activity_report.html', context)
+
+
 class DailyReportCreateView(CreateView):
     model = DailyReport
     template_name = 'pages/add_daily_report.html'
