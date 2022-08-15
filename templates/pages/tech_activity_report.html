@@ -16,8 +16,9 @@
             {% for item in date %}
                 <div class="card">
                     <div class="card-header">
-                        <span class="font-weight-bold">{{ item.category }}</span> &middot;
-                        <span class="text-muted">{{ item.make }} {{ item.model }} | {{ item.date }}</span>
+                        <span class="font-weight-bold">{{ item.date }} &bullet; </span>
+                        <span class="text-muted">{{ item.category }} &bullet; {{ item.location }} &bullet; {{ item.game_Name }} &bullet;
+                            {{ item.make }} {{ item.model }} &bullet; {{ item.tech_Name }} &bullet; {{ item.serial_Number }}</span>
                     </div>
                     <div class="card-body">
                         <p>Incident:</p> {{ item.incident }}
@@ -28,11 +29,12 @@
         </div>
 
         <div class="container-sm" style="padding: 0 500px 10px 10px">
-            {% for item in techName %}
+            {% for item in tech_name %}
                 <div class="card">
                     <div class="card-header">
-                        <span class="font-weight-bold">{{ item.category }}</span> &middot;
-                        <span class="text-muted">{{ item.make }} {{ item.model }} | {{ item.date }}</span>
+                        <span class="font-weight-bold">{{ item.tech_Name }} &bullet; </span>
+                        <span class="text-muted">{{ item.category }} &bullet; {{ item.location }} &bullet; {{ item.game_Name }} &bullet;
+                            {{ item.make }} {{ item.model }} &bullet; {{ item.date }} &bullet; {{ item.serial_Number }}</span>
                     </div>
                     <div class="card-body">
                         <p>Incident:</p> {{ item.incident }}
@@ -45,10 +47,10 @@
         <!-- Nav tabs -->
         <ul class="nav nav-tabs" role="tablist">
             <li class="nav-item">
-                <a class="nav-link active" data-bs-toggle="tab" href="#home">Search by Date Range</a>
+                <a class="nav-link active" data-bs-toggle="tab" href="#home">Search by Date</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#menu1">Search by Keyword</a>
+                <a class="nav-link" data-bs-toggle="tab" href="#menu1">Search by Tech Name</a>
             </li>
         </ul>
 
@@ -69,11 +71,10 @@
             <div id="menu1" class="container tab-pane fade"><br>
                 <div class="container-sm" style="padding: 0 500px 10px 10px">
                     <form action="" method="GET" style="margin-top: 10px">
-                        <p>Enter a Keyword to Search:</p>
-                        <label>
-                            <input type="text" name="desc" required>
-                        </label>
-                        <input type="submit">
+                        <p style="font-style: italic">Enter a Tech Name:</p>
+                        <label for="tech_name"></label>
+                        <input type="text" id="tech_name" name="tech_name" required>
+                        <input type="submit" value="Submit">
                     </form>
                 </div>
             </div>

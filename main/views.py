@@ -54,12 +54,12 @@ def incident_solution(request):
     else:
         template = loader.get_template('../templates/pages/incident_solution.html')
         context = {
-            'techName': post.techName,
+            'tech_Name': post.tech_Name,
             'location': post.location,
-            'serialNumber': post.serialNumber,
+            'serial_Number': post.serial_Number,
             'make': post.make,
             'model': post.model,
-            'gameName': post.gameName,
+            'game_Name': post.game_Name,
             'date': post.date,
             'category': post.category,
             'incident': post.incident,
@@ -71,10 +71,13 @@ def incident_solution(request):
 @login_required
 def knowledge_base(request):
     incident_query_dict = request.GET
+
     query = incident_query_dict.get('q')
+
     search_object = None
+
     if query is not None:
-        search_object = Incident.objects.all().values().filter(incident__contains=query)
+        search_object = Incident.objects.filter(Q(incident__contains=query)).values()
     context = {'incident': search_object}
     return render(request, '../templates/pages/knowledge_base.html', context)
 
@@ -95,7 +98,7 @@ def daily_activity_report(request):
     desc_search_object = None
 
     if date_query is not None:
-        date_search_object = DailyReport.objects.filter(Q(created__lte=date_query)).values()
+        date_search_object = DailyReport.objects.filter(Q(created__exact=date_query)).values()
     elif desc_query is not None:
         desc_search_object = DailyReport.objects.filter(Q(description__contains=desc_query)).values()
 
@@ -107,12 +110,27 @@ def daily_activity_report(request):
 
 @login_required
 def slot_machines_report(request):
-    incident_query_dict = request.GET
-    query = incident_query_dict.get('q')
-    search_object = None
-    if query is not None:
-        search_object = Incident.objects.all().values().filter(incident__contains=query)
-    context = {'incident': search_object}
+    query_dict = request.GET
+
+    location_query = query_dict.get('location')
+    serial_number_query = query_dict.get('serial_number')
+    make_query = query_dict.get('make')
+    model_query = query_dict.get('model')
+
+    location_search_object = None
+    serial_number_search_object = None
+    make_search_object = None
+    model_search_object = None
+
+
+    if location_query is not None:
+        location_search_object = Incident.objects.filter(Q(techName__contains=location_query)).values()
+    elif serial_number_query is not None:
+        serial_number_search_object = Incident.objects.filter(Q(date__exact=serial_number_query)).values()
+    context = {
+        'tech_name': location_search_object,
+        'date': serial_number_search_object
+    }
     return render(request, '../templates/pages/slot_machines_report.html', context)
 
 
@@ -120,35 +138,19 @@ def slot_machines_report(request):
 def tech_activity_report(request):
     query_dict = request.GET
 
-    tech_query = query_dict.get('tech')
+    tech_query = query_dict.get('tech_name')
     date_query = query_dict.get('date')
 
     tech_search_object = None
-    location_search_object = None
-    serial_number_search_object = None
-    make_search_object = None
-    model_search_object = None
-    game_name_search_object = None
     date_search_object = None
-    category_search_object = None
-    incident_search_object = None
-    solution_search_object = None
 
     if tech_query is not None:
-        tech_search_object = Incident.objects.filter(Q(techName__contains=tech_query)).values()
+        tech_search_object = Incident.objects.filter(Q(tech_Name__contains=tech_query)).values()
     elif date_query is not None:
         date_search_object = Incident.objects.filter(Q(date__exact=date_query)).values()
     context = {
-        'techName': tech_search_object,
-        'location': location_search_object,
-        'serialNumber': serial_number_search_object,
-        'make': make_search_object,
-        'model': model_search_object,
-        'gameName': game_name_search_object,
-        'date': date_search_object,
-        'category': category_search_object,
-        'incident': incident_search_object,
-        'solution': solution_search_object
+        'tech_name': tech_search_object,
+        'date': date_search_object
     }
     return render(request, '../templates/pages/tech_activity_report.html', context)
 
@@ -162,7 +164,7 @@ class DailyReportCreateView(CreateView):
 class IncidentSolutionCreateView(CreateView):
     model = Incident
     template_name = 'pages/add_incident_solution.html'
-    fields = ['techName', 'location', 'serialNumber', 'make', 'model', 'gameName', 'category', 'incident',
+    fields = ['tech_Name', 'location', 'serial_Number', 'make', 'model', 'game_Name', 'category', 'incident',
               'solution']
 
 

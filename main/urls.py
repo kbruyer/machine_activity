@@ -20,9 +20,9 @@ urlpatterns = [
 
     # Reports URLS
     path('reports/', ReportsTemplateView.as_view(), name='reports'),
-    path('daily_activity_report/', views.daily_activity_report, name='daily_activity_report'),
     path('slot_machines_report/', views.slot_machines_report, name='slot_machines_report'),
     path('tech_activity_report/', views.tech_activity_report, name='tech_activity_report'),
+    path('daily_activity_report/', views.daily_activity_report, name='daily_activity_report'),
 
     # Login URLS
     path('login/', auth_views.LoginView.as_view(), name='login'),
