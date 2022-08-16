@@ -34,9 +34,8 @@
                 <div class="card">
                     <div class="card-header">
                         <span class="font-weight-bold">{{ item.tech_Name }} &bullet; </span>
-                        <span class="text-muted">{{ item.category }} &bullet; {{ item.location }} &bullet;
-                            {{ item.game_Name }} &bullet; {{ item.make }} {{ item.model }} &bullet; {{ item.date }}
-                            &bullet; {{ item.serial_Number }}</span>
+                        <span class="text-muted">{{ item.category }} &bullet; {{ item.location }} &bullet; {{ item.game_Name }} &bullet;
+                            {{ item.make }} {{ item.model }} &bullet; {{ item.date }} &bullet; {{ item.serial_Number }}</span>
                     </div>
                     <div class="card-body">
                         <p>Incident:</p> {{ item.incident }}
@@ -72,7 +71,15 @@
 
             <div id="menu1" class="container tab-pane fade"><br>
                 <div class="container-sm" style="padding: 0 500px 10px 10px">
-
+                    <form action="">
+                        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                        <label id="checkbox_label" for="vehicle1"> Location</label><br>
+                        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                        <label id="checkbox_label" for="vehicle2"> Serial Number</label><br>
+                        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                        <label id="checkbox_label" for="vehicle3"> Make</label><br><br>
+                        <input type="submit" value="Submit">
+                    </form>
                 </div>
             </div>
         </div>

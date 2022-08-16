@@ -116,20 +116,41 @@ def slot_machines_report(request):
     serial_number_query = query_dict.get('serial_number')
     make_query = query_dict.get('make')
     model_query = query_dict.get('model')
+    game_name_query = query_dict.get('game_name')
+    date_query = query_dict.get('date')
+    category_query = query_dict.get('category')
 
     location_search_object = None
     serial_number_search_object = None
     make_search_object = None
     model_search_object = None
-
+    game_name_search_object = None
+    date_search_object = None
+    category_search_object = None
 
     if location_query is not None:
-        location_search_object = Incident.objects.filter(Q(techName__contains=location_query)).values()
+        location_search_object = Incident.objects.filter(Q(location__exact=location_query)).values()
     elif serial_number_query is not None:
-        serial_number_search_object = Incident.objects.filter(Q(date__exact=serial_number_query)).values()
+        serial_number_search_object = Incident.objects.filter(Q(serial_Number__exact=serial_number_query)).values()
+    elif make_query is not None:
+        make_search_object = Incident.objects.filter(Q(make__exact=make_query)).values()
+    elif model_query is not None:
+        model_search_object = Incident.objects.filter(Q(model__exact=model_query)).values()
+    elif game_name_query is not None:
+        game_name_search_object = Incident.objects.filter(Q(game_Name__exact=game_name_query)).values()
+    elif date_query is not None:
+        date_search_object = Incident.objects.filter(Q(date__exact=date_query)).values()
+    elif category_query is not None:
+        category_search_object = Incident.objects.filter(Q(category__exact=category_query)).values()
+
     context = {
-        'tech_name': location_search_object,
-        'date': serial_number_search_object
+        'location': location_search_object,
+        'serial_number': serial_number_search_object,
+        'make': make_search_object,
+        'model': model_search_object,
+        'game_name': game_name_search_object,
+        'date': date_search_object,
+        'category': category_search_object
     }
     return render(request, '../templates/pages/slot_machines_report.html', context)
 

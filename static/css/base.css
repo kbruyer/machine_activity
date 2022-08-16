@@ -164,3 +164,9 @@ img {
     font-weight: bold;
     margin: 2px 2px 2px 2px;
 }
+
+#checkbox_label {
+    position: relative;
+    top: -26px;
+    left: 20px;
+}
