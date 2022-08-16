@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1befcf3c-1565-46cd-be89-403b054df5ba" name="Changes" comment="08/15/2022">
-      <change afterPath="$PROJECT_DIR$/staticfiles/css/base.aad7b4694c56.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/staticfiles/css/base.aad7b4694c56.css.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/css/base.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/css/base.css.gz" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/css/base.css.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/staticfiles.json" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/staticfiles.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pipfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/machine_activity/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/machine_activity/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,7 +187,8 @@
       <workItem from="1660520297712" duration="16600000" />
       <workItem from="1660552668120" duration="142000" />
       <workItem from="1660600761595" duration="3434000" />
-      <workItem from="1660628955094" duration="3973000" />
+      <workItem from="1660628955094" duration="3999000" />
+      <workItem from="1660633273017" duration="136000" />
     </task>
     <task id="LOCAL-00002" summary="Update">
       <created>1658389029969</created>
@@ -471,7 +470,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660632895756</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="08/15/2022">
+      <created>1660633178725</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1660633178725</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
