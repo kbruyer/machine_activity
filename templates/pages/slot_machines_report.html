@@ -13,13 +13,12 @@
         <br>
 
         <div class="container-sm" style="padding: 0 500px 10px 10px">
-            {% for item in date %}
+            {% for item in location %}
                 <div class="card">
                     <div class="card-header">
-                        <span class="font-weight-bold">{{ item.date }} &bullet; </span>
-                        <span class="text-muted">{{ item.category }} &bullet; {{ item.location }} &bullet;
-                            {{ item.game_Name }} &bullet; {{ item.make }} {{ item.model }} &bullet; {{ item.tech_Name }}
-                            &bullet; {{ item.serial_Number }}</span>
+                        <span class="font-weight-bold">{{ item.location }} &bullet; </span>
+                        <span class="text-muted">{{ item.category }} &bullet; {{ item.tech_name }} &bullet; {{ item.game_Name }} &bullet;
+                            {{ item.make }} {{ item.model }} &bullet; {{ item.date }} &bullet; {{ item.serial_Number }}</span>
                     </div>
                     <div class="card-body">
                         <p>Incident:</p> {{ item.incident }}
@@ -30,11 +29,91 @@
         </div>
 
         <div class="container-sm" style="padding: 0 500px 10px 10px">
-            {% for item in tech_name %}
+            {% for item in serial_number %}
                 <div class="card">
                     <div class="card-header">
-                        <span class="font-weight-bold">{{ item.tech_Name }} &bullet; </span>
-                        <span class="text-muted">{{ item.category }} &bullet; {{ item.location }} &bullet; {{ item.game_Name }} &bullet;
+                        <span class="font-weight-bold">{{ item.location }} &bullet; </span>
+                        <span class="text-muted">{{ item.category }} &bullet; {{ item.tech_name }} &bullet; {{ item.game_Name }} &bullet;
+                            {{ item.make }} {{ item.model }} &bullet; {{ item.date }} &bullet; {{ item.serial_Number }}</span>
+                    </div>
+                    <div class="card-body">
+                        <p>Incident:</p> {{ item.incident }}
+                        <p>Solution:</p> {{ item.solution }}
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+
+        <div class="container-sm" style="padding: 0 500px 10px 10px">
+            {% for item in make %}
+                <div class="card">
+                    <div class="card-header">
+                        <span class="font-weight-bold">{{ item.location }} &bullet; </span>
+                        <span class="text-muted">{{ item.category }} &bullet; {{ item.tech_name }} &bullet; {{ item.game_Name }} &bullet;
+                            {{ item.make }} {{ item.model }} &bullet; {{ item.date }} &bullet; {{ item.serial_Number }}</span>
+                    </div>
+                    <div class="card-body">
+                        <p>Incident:</p> {{ item.incident }}
+                        <p>Solution:</p> {{ item.solution }}
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+
+        <div class="container-sm" style="padding: 0 500px 10px 10px">
+            {% for item in model %}
+                <div class="card">
+                    <div class="card-header">
+                        <span class="font-weight-bold">{{ item.location }} &bullet; </span>
+                        <span class="text-muted">{{ item.category }} &bullet; {{ item.tech_name }} &bullet; {{ item.game_Name }} &bullet;
+                            {{ item.make }} {{ item.model }} &bullet; {{ item.date }} &bullet; {{ item.serial_Number }}</span>
+                    </div>
+                    <div class="card-body">
+                        <p>Incident:</p> {{ item.incident }}
+                        <p>Solution:</p> {{ item.solution }}
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+
+        <div class="container-sm" style="padding: 0 500px 10px 10px">
+            {% for item in game_name %}
+                <div class="card">
+                    <div class="card-header">
+                        <span class="font-weight-bold">{{ item.location }} &bullet; </span>
+                        <span class="text-muted">{{ item.category }} &bullet; {{ item.tech_name }} &bullet; {{ item.game_Name }} &bullet;
+                            {{ item.make }} {{ item.model }} &bullet; {{ item.date }} &bullet; {{ item.serial_Number }}</span>
+                    </div>
+                    <div class="card-body">
+                        <p>Incident:</p> {{ item.incident }}
+                        <p>Solution:</p> {{ item.solution }}
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+
+        <div class="container-sm" style="padding: 0 500px 10px 10px">
+            {% for item in date %}
+                <div class="card">
+                    <div class="card-header">
+                        <span class="font-weight-bold">{{ item.location }} &bullet; </span>
+                        <span class="text-muted">{{ item.category }} &bullet; {{ item.tech_name }} &bullet; {{ item.game_Name }} &bullet;
+                            {{ item.make }} {{ item.model }} &bullet; {{ item.date }} &bullet; {{ item.serial_Number }}</span>
+                    </div>
+                    <div class="card-body">
+                        <p>Incident:</p> {{ item.incident }}
+                        <p>Solution:</p> {{ item.solution }}
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+
+        <div class="container-sm" style="padding: 0 500px 10px 10px">
+            {% for item in category %}
+                <div class="card">
+                    <div class="card-header">
+                        <span class="font-weight-bold">{{ item.location }} &bullet; </span>
+                        <span class="text-muted">{{ item.category }} &bullet; {{ item.tech_name }} &bullet; {{ item.game_Name }} &bullet;
                             {{ item.make }} {{ item.model }} &bullet; {{ item.date }} &bullet; {{ item.serial_Number }}</span>
                     </div>
                     <div class="card-body">
@@ -48,10 +127,25 @@
         <!-- Nav tabs -->
         <ul class="nav nav-tabs" role="tablist">
             <li class="nav-item">
-                <a class="nav-link active" data-bs-toggle="tab" href="#home">Search by Date</a>
+                <a class="nav-link active" data-bs-toggle="tab" href="#home">Search by Location</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#menu1">Search by Option</a>
+                <a class="nav-link" data-bs-toggle="tab" href="#menu1">Search by Serial Number</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#menu2">Search by Make</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#menu3">Search by Model</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#menu4">Search by Game Name</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#menu5">Search by Date</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#menu6">Search by Category</a>
             </li>
         </ul>
 
@@ -59,6 +153,61 @@
         <div class="tab-content">
 
             <div id="home" class="container tab-pane active"><br>
+                <div class="container-sm" style="padding: 0 500px 10px 10px">
+                    <form action="" method="GET" style="margin-top: 10px">
+                        <p style="font-style: italic">Enter a Location:</p>
+                        <label for="location"></label>
+                        <input type="text" id="location" name="location" required>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+
+            <div id="menu1" class="container tab-pane fade"><br>
+                <div class="container-sm" style="padding: 0 500px 10px 10px">
+                    <form action="" method="GET" style="margin-top: 10px">
+                        <p style="font-style: italic">Enter a Serial Number:</p>
+                        <label for="serial_number"></label>
+                        <input type="text" id="serial_number" name="serial_number" required>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+
+            <div id="menu2" class="container tab-pane fade"><br>
+                <div class="container-sm" style="padding: 0 500px 10px 10px">
+                    <form action="" method="GET" style="margin-top: 10px">
+                        <p style="font-style: italic">Enter a Make:</p>
+                        <label for="make"></label>
+                        <input type="text" id="make" name="make" required>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+
+            <div id="menu3" class="container tab-pane fade"><br>
+                <div class="container-sm" style="padding: 0 500px 10px 10px">
+                    <form action="" method="GET" style="margin-top: 10px">
+                        <p style="font-style: italic">Enter a model:</p>
+                        <label for="model"></label>
+                        <input type="text" id="model" name="model" required>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+
+            <div id="menu4" class="container tab-pane fade"><br>
+                <div class="container-sm" style="padding: 0 500px 10px 10px">
+                    <form action="" method="GET" style="margin-top: 10px">
+                        <p style="font-style: italic">Enter a Game Name:</p>
+                        <label for="game_name"></label>
+                        <input type="text" id="game_name" name="game_name" required>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+
+            <div id="menu5" class="container tab-pane fade"><br>
                 <div class="container-sm" style="padding: 0 500px 10px 10px">
                     <form action="" method="GET" style="margin-top: 10px">
                         <p style="font-style: italic">Enter a date:</p>
@@ -69,15 +218,12 @@
                 </div>
             </div>
 
-            <div id="menu1" class="container tab-pane fade"><br>
+            <div id="menu6" class="container tab-pane fade"><br>
                 <div class="container-sm" style="padding: 0 500px 10px 10px">
-                    <form action="">
-                        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                        <label id="checkbox_label" for="vehicle1"> Location</label><br>
-                        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-                        <label id="checkbox_label" for="vehicle2"> Serial Number</label><br>
-                        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-                        <label id="checkbox_label" for="vehicle3"> Make</label><br><br>
+                    <form action="" method="GET" style="margin-top: 10px">
+                        <p style="font-style: italic">Enter a Category:</p>
+                        <label for="category"></label>
+                        <input type="text" id="category" name="category" required>
                         <input type="submit" value="Submit">
                     </form>
                 </div>

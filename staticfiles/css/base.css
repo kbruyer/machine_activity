@@ -165,8 +165,8 @@ img {
     margin: 2px 2px 2px 2px;
 }
 
-#checkbox_label {
+#slot_cb {
     position: relative;
-    top: -26px;
     left: 20px;
+    top: -27px;
 }
